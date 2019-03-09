@@ -522,9 +522,9 @@ static void ShowDemoWindowWidgets()
             ImGui::SliderInt("slider int", &i1, -1, 3);
             ImGui::SameLine(); HelpMarker("CTRL+click to input value.");
 
-            static float f1=0.123f, f2=0.0f;
+            static float f1=0.123f, f2=1.0f;
             ImGui::SliderFloat("slider float", &f1, 0.0f, 1.0f, "ratio = %.3f");
-            ImGui::SliderFloat("slider float (curve)", &f2, -10.0f, 10.0f, "%.4f", 2.0f);
+            ImGui::SliderFloat("slider float (curve)", &f2, -10.0f, 10.0f, "%.4f", 0.0f);
             static float angle = 0.0f;
             ImGui::SliderAngle("slider angle", &angle);
         }
